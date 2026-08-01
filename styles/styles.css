@@ -1,0 +1,388 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+/* Fuente y estilos generales */
+
+.pagina {
+    background-color: #f2f5f3;
+    color: #202820;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Encabezado */
+
+/* Logo interactivo en las cinco páginas */
+
+.enlace-logo {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.enlace-logo:hover .logo-pagina,
+.enlace-logo:focus .logo-pagina {
+    opacity: 0.85;
+}
+
+.encabezado {
+    background-color: #123524;
+}
+
+/* Encabezado fijo únicamente en index.html */
+
+.encabezado-inicio {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu-enlace {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-enlace:hover {
+    color: #ff8a1f;
+}
+
+
+/* Sección principal */
+
+.seccion-inicio {
+    background-color: #1d593c;
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.texto-principal {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* Secciones de contenido */
+
+.seccion-contacto {
+    background-color: #e4ebe7;
+}
+
+.titulo-seccion {
+    color: #123524;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.subtitulo {
+    color: #d95f02;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.texto {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.lista {
+    line-height: 1.8;
+    list-style: none;
+}
+
+.lista-item {
+    color: #202820;
+}
+
+
+/* Información de la página Sobre mí */
+
+.lista-informacion {
+    list-style: none;
+}
+
+.informacion-item {
+    color: #202820;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/* Noticias destacadas */
+
+.seccion-noticias {
+    background-color: #202820;
+}
+
+.seccion-noticias .titulo-seccion {
+    color: #ffffff;
+}
+
+.noticia-principal {
+    background-color: #123524;
+    color: #ffffff;
+}
+
+.noticia-secundaria {
+    background-color: #123524;
+    color: #ffffff;
+}
+
+.categoria-noticia {
+    color: #ff8a1f;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.titulo-noticia-principal {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.titulo-noticia {
+    color: #123524;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.noticia-secundaria .titulo-noticia {
+    color: #ffffff;
+}
+
+.resumen-noticia {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/* Últimas noticias */
+
+.seccion-ultimas-noticias {
+    background-color: #f2f5f3;
+}
+
+.tarjeta-noticia {
+    background-color: #ffffff;
+}
+
+
+/* Fixture del Torneo Intermedio */
+
+.seccion-fixture {
+    background-color: #e4ebe7;
+}
+
+.texto-fixture {
+    color: #202820;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tarjeta-fixture {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.subtitulo-fixture {
+    color: #d95f02;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.descripcion-fixture {
+    color: #4b554f;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Imágenes de las páginas */
+
+.descripcion-imagen {
+    color: #4b554f;
+    font-size: 14px;
+}
+
+
+/* Resultados internacionales */
+
+.seccion-resultados {
+    background-color: #f2f5f3;
+}
+
+.seccion-resultados-alternativa {
+    background-color: #e4ebe7;
+}
+
+.grupo-resultados {
+    text-align: center;
+}
+
+.partido-resultado {
+    color: #202820;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.marcador {
+    color: #d95f02;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.clasificacion {
+    color: #4b554f;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* Próximos partidos internacionales */
+
+.seccion-proximos {
+    background-color: #123524;
+    color: #ffffff;
+}
+
+.seccion-proximos .titulo-seccion {
+    color: #ffffff;
+}
+
+.partido-proximo {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.horario-partido {
+    color: #ff8a1f;
+    font-weight: 800;
+}
+
+.detalle-partido {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* Equipos clasificados */
+
+.seccion-clasificados {
+    background-color: #f2f5f3;
+    text-align: center;
+}
+
+.lista-clasificados {
+    list-style: none;
+}
+
+.equipo-clasificado {
+    color: #123524;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.texto-pendiente {
+    color: #4b554f;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* Cruces de octavos de final */
+
+.seccion-cruces {
+    background-color: #e4ebe7;
+    text-align: center;
+}
+
+.cruce {
+    color: #202820;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Próximas fases */
+
+.seccion-fases {
+    background-color: #f2f5f3;
+    text-align: center;
+}
+
+.fase-pendiente {
+    color: #4b554f;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Fuente de información */
+
+.seccion-fuente {
+    background-color: #202820;
+    color: #ffffff;
+    text-align: center;
+}
+
+.texto-fuente {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.enlace-fuente {
+    color: #ff8a1f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.enlace-fuente:hover {
+    color: #ffffff;
+}
+
+
+/* Pie de página */
+
+.pie-pagina {
+    background-color: #0b2117;
+    color: #ffffff;
+}
+
+.derechos {
+    font-size: 14px;
+}
+
+.lista-redes {
+    list-style: none;
+}
+
+.enlace-red {
+    color: #ff8a1f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.enlace-red .icono-red {
+    vertical-align: middle;
+}

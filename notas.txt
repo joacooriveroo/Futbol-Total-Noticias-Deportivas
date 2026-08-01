@@ -1,0 +1,385 @@
+PROYECTO: FÚTBOL TOTAL
+
+DESCRIPCIÓN GENERAL
+
+Fútbol Total es un sitio web informativo dedicado al fútbol nacional e internacional. El proyecto fue creado para compartir noticias, resultados, calendarios, estadísticas, próximos partidos y otra información relevante sobre diferentes competiciones.
+
+El sitio tiene una identidad visual relacionada con el fútbol y utiliza principalmente colores verdes, fondos claros y detalles en naranja.
+
+OBJETIVO DEL PROYECTO
+
+El objetivo principal es presentar información deportiva de forma clara, ordenada y fácil de comprender. También se busca que el visitante pueda navegar entre las diferentes páginas y encontrar rápidamente noticias, fixtures, resultados y datos sobre las competiciones.
+
+TECNOLOGÍAS UTILIZADAS
+
+Para desarrollar el proyecto se utilizaron:
+
+* HTML5 para crear la estructura y el contenido.
+* CSS3 para aplicar colores, tipografías y estilos.
+* JavaScript para mostrar automáticamente el año actual.
+* Google Fonts para utilizar la tipografía Montserrat.
+
+ESTRUCTURA DE CARPETAS
+
+El proyecto se organizó mediante diferentes carpetas:
+
+* La página index.html se encuentra en la carpeta principal.
+* Las páginas secundarias se encuentran dentro de la carpeta pages.
+* El archivo styles.css se encuentra dentro de la carpeta styles.
+* Las imágenes utilizadas se encuentran dentro de la carpeta assets.
+
+PÁGINAS DEL SITIO
+
+El proyecto está compuesto por cinco páginas HTML principales.
+
+1. INICIO
+
+La página de inicio presenta el contenido principal de Fútbol Total.
+
+Incluye:
+
+* Presentación del sitio.
+* Noticias destacadas.
+* Últimas noticias.
+* Fixture del Torneo Intermedio.
+* Imágenes correspondientes a la Serie A y la Serie B.
+* Menú de navegación.
+* Pie de página con redes sociales.
+
+2. SOBRE MÍ
+
+La página “Sobre mí” explica el propósito del proyecto y el tipo de contenido que se puede encontrar en Fútbol Total.
+
+Incluye:
+
+* Una presentación del creador del sitio.
+* La pasión por el periodismo deportivo.
+* El objetivo de presentar información clara y confiable.
+* Una explicación de los contenidos disponibles.
+* Resultados y calendarios.
+* Noticias sobre equipos y jugadores.
+* Estadísticas y datos destacados.
+* Cobertura especial del fútbol uruguayo.
+* Análisis de partidos y competiciones.
+* Una imagen del estadio Monumental.
+
+3. PROYECTOS
+
+La página de proyectos presenta trabajos o coberturas deportivas realizadas para el sitio.
+
+Esta sección permite organizar diferentes contenidos relacionados con noticias, torneos, clubes, calendarios y acontecimientos deportivos.
+
+4. RESULTADOS
+
+La página de resultados está dedicada a la Copa Sudamericana 2026.
+
+Incluye:
+
+* Una presentación de la competición.
+* Una imagen representativa.
+* Resultados de los partidos de ida.
+* Resultados de los partidos de vuelta.
+* Resultados globales.
+* Equipos clasificados.
+* Próximos partidos.
+* Horarios y estadios.
+* Cruces de octavos de final.
+* Información sobre cuartos de final.
+* Información sobre semifinales.
+* Información sobre la final.
+* Un enlace a la fuente de información.
+
+5. CONTACTO
+
+La página de contacto permite presentar los medios disponibles para comunicarse con Fútbol Total.
+
+También mantiene el mismo encabezado, navegación, identidad visual y pie de página utilizado en el resto del proyecto.
+
+NAVEGACIÓN
+
+Todas las páginas están conectadas mediante un menú de navegación.
+
+Los enlaces principales son:
+
+* Inicio
+* Sobre mí
+* Proyectos
+* Resultados
+* Contacto
+
+Los enlaces utilizan rutas relativas según la ubicación de cada archivo.
+
+Por ejemplo, las páginas que se encuentran dentro de la carpeta pages utilizan:
+
+../index.html
+
+La página index.html utiliza rutas hacia la carpeta pages.
+
+HTML SEMÁNTICO
+
+Se utilizaron etiquetas semánticas de HTML5 para organizar correctamente el contenido:
+
+* header para el encabezado.
+* nav para los menús de navegación.
+* main para el contenido principal.
+* section para separar las diferentes secciones.
+* article para contenidos independientes.
+* figure para agrupar imágenes.
+* figcaption para describir las imágenes.
+* footer para el pie de página.
+
+También se utilizaron:
+
+* h1 para el título principal de cada página.
+* h2 para los títulos de las secciones.
+* h3 para subtítulos.
+* p para los párrafos.
+* ul y li para las listas.
+* a para los enlaces.
+* strong para destacar marcadores y horarios.
+* img para las imágenes.
+
+JERARQUÍA DE ENCABEZADOS
+
+Cada página utiliza un solo h1 como título principal.
+
+Los títulos secundarios utilizan h2 y los títulos internos utilizan h3.
+
+También se corrigió una advertencia del validador HTML en resultados.html. La sección que contenía la imagen de la competición no tenía encabezado, por lo que se agregó:
+
+La Copa Sudamericana
+
+como título h2 de esa sección.
+
+IMÁGENES
+
+Las imágenes se guardaron dentro de la carpeta assets.
+
+Cada imagen utiliza un atributo alt con una descripción de su contenido. Esto permite mejorar la accesibilidad y mostrar información alternativa si la imagen no puede cargarse.
+
+Se utilizaron imágenes para:
+
+* Noticias destacadas.
+* El estadio Monumental.
+* La Copa Sudamericana.
+* El fixture del Torneo Intermedio.
+* La Serie A.
+* La Serie B.
+* Escudos de equipos.
+
+FIXTURE DEL TORNEO INTERMEDIO
+
+Se trabajó en dos imágenes correspondientes al Torneo Intermedio:
+
+* Serie A.
+* Serie B.
+
+En ambas imágenes se ajustó la posición de los elementos para que los títulos, los partidos y los escudos estuvieran mejor centrados.
+
+También se igualó la separación visual entre el título de la serie y el cuadro de partidos.
+
+En otra imagen del fixture se cambió únicamente el color de la barra superior al color #003c1b, conservando sus dimensiones y el resto de sus elementos.
+
+CSS EXTERNO
+
+Todos los estilos se encuentran en el archivo styles.css.
+
+Cada una de las cinco páginas HTML incluye el enlace correspondiente dentro de head.
+
+En las páginas ubicadas dentro de pages se utiliza:
+
+<link rel="stylesheet" href="../styles/styles.css">
+
+No se utilizaron etiquetas style ni atributos style dentro del HTML.
+
+ORGANIZACIÓN DEL CSS
+
+El archivo CSS fue organizado mediante comentarios.
+
+Algunas de las secciones son:
+
+* Fuente y estilos generales.
+* Encabezado.
+* Sección principal.
+* Secciones de contenido.
+* Información de la página Sobre mí.
+* Noticias destacadas.
+* Últimas noticias.
+* Fixture del Torneo Intermedio.
+* Imágenes de las páginas.
+* Resultados internacionales.
+* Próximos partidos internacionales.
+* Equipos clasificados.
+* Cruces de octavos de final.
+* Próximas fases.
+* Fuente de información.
+* Pie de página.
+
+TIPOGRAFÍA
+
+Se utilizó la tipografía Montserrat de Google Fonts.
+
+La importación se realizó desde el archivo CSS.
+
+También se agregó sans-serif como fuente alternativa para que el navegador pueda mostrar una tipografía genérica si Google Fonts no carga.
+
+Se aplicaron diferentes tamaños y grosores para distinguir:
+
+* Títulos principales.
+* Títulos de secciones.
+* Subtítulos.
+* Texto general.
+* Categorías de noticias.
+* Marcadores.
+* Horarios.
+* Enlaces.
+
+PALETA DE COLORES
+
+El proyecto utiliza una paleta de colores expresada mediante códigos HEX.
+
+Colores principales:
+
+* Verde oscuro: #123524
+* Verde secundario: #1d593c
+* Verde del encabezado de fixture: #003c1b
+* Naranja de acento: #ff8a1f
+* Naranja secundario: #d95f02
+* Fondo claro: #f2f5f3
+* Fondo alternativo: #e4ebe7
+* Texto oscuro: #202820
+* Texto secundario: #4b554f
+* Fondo del pie de página: #0b2117
+* Blanco: #ffffff
+
+El verde se utiliza como color principal del sitio.
+
+El naranja se utiliza para destacar categorías, enlaces, horarios y marcadores.
+
+Los fondos claros se utilizan para facilitar la lectura.
+
+CONTRASTE Y LEGIBILIDAD
+
+Se utilizaron textos blancos sobre fondos verdes u oscuros.
+
+En las secciones claras se utilizaron textos oscuros.
+
+Los títulos tienen mayor tamaño y peso que los párrafos.
+
+Esto permite diferenciar la jerarquía del contenido y facilita la lectura.
+
+CLASES CSS
+
+Los estilos se aplicaron mediante clases descriptivas.
+
+Algunos ejemplos son:
+
+* pagina
+* encabezado
+* nombre-pagina
+* menu
+* menu-item
+* menu-enlace
+* titulo-principal
+* titulo-seccion
+* subtitulo
+* texto
+* noticia-principal
+* tarjeta-noticia
+* imagen-fixture
+* partido-resultado
+* marcador
+* equipo-clasificado
+* enlace-fuente
+* pie-pagina
+
+No se utilizaron identificadores para aplicar estilos CSS.
+
+LISTAS
+
+Se utilizaron listas para organizar:
+
+* El menú principal.
+* Las redes sociales.
+* Los equipos clasificados.
+* La información de la página Sobre mí.
+
+En la lista de la página Sobre mí se eliminaron los puntos mediante:
+
+list-style: none;
+
+ENLACES
+
+Los enlaces internos permiten navegar entre las páginas del proyecto.
+
+También se utilizaron enlaces externos para:
+
+* Twitter/X.
+* Instagram.
+* YouTube.
+* Promiedos.
+
+Los enlaces externos utilizan:
+
+target="_blank"
+
+para abrirse en una pestaña nueva.
+
+También utilizan:
+
+rel="noopener"
+
+para mejorar la seguridad.
+
+JAVASCRIPT
+
+Se utilizó un pequeño código JavaScript para actualizar automáticamente el año del pie de página.
+
+El HTML contiene:
+
+<span id="year"></span>
+
+El script obtiene el año actual mediante:
+
+new Date().getFullYear()
+
+De esta forma, el año no necesita actualizarse manualmente.
+
+El identificador year se utiliza únicamente para JavaScript y no para aplicar estilos.
+
+VALIDACIÓN
+
+Se revisó el HTML con un validador.
+
+Se corrigió la advertencia que indicaba que una sección no tenía encabezado.
+
+Para solucionarlo se conservó la etiqueta section y se agregó un encabezado h2 que identifica su contenido.
+
+También se mantuvo una jerarquía correcta de encabezados y se verificó el cierre de las etiquetas.
+
+REQUISITOS CSS CUMPLIDOS
+
+El proyecto cumple con los siguientes requisitos:
+
+* Paleta mínima de tres colores.
+* Colores escritos en formato HEX.
+* Tipografía importada desde Google Fonts.
+* Diferentes valores de font-size.
+* Diferentes valores de font-weight.
+* Fuente genérica de respaldo.
+* Fondos personalizados.
+* CSS organizado mediante comentarios.
+* Archivo styles.css externo.
+* styles.css vinculado en las cinco páginas.
+* Ausencia de estilos en línea.
+* Ausencia de !important.
+* Estilos aplicados mediante clases.
+* Identificadores reservados para JavaScript.
+* h1 más grande y pesado que los párrafos.
+* Contraste suficiente entre fondo y texto.
+
+FUENTE DE INFORMACIÓN
+
+Parte de la información deportiva de la Copa Sudamericana fue consultada en Promiedos.
+
+El enlace a la fuente se agregó dentro de la página de resultados.
