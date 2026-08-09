@@ -1,6 +1,8 @@
-/* Google Fonts */
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 /* Fuente y estilos generales */
@@ -11,26 +13,22 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
-/* Encabezado */
-
-/* Logo interactivo en las cinco páginas */
-
-.enlace-logo {
-    text-decoration: none;
-    cursor: pointer;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-.enlace-logo:hover .logo-pagina,
-.enlace-logo:focus .logo-pagina {
-    opacity: 0.85;
-}
+
+/* Encabezado y navbar */
 
 .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 40px;
     background-color: #123524;
 }
-
-/* Encabezado fijo únicamente en index.html */
 
 .encabezado-inicio {
     position: sticky;
@@ -38,7 +36,27 @@
     z-index: 1000;
 }
 
+.enlace-logo {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo-pagina {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.enlace-logo:hover .logo-pagina,
+.enlace-logo:focus .logo-pagina {
+    opacity: 0.85;
+}
+
 .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
     list-style: none;
 }
 
@@ -57,23 +75,49 @@
 /* Sección principal */
 
 .seccion-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 280px;
+    padding: 50px 40px;
     background-color: #1d593c;
     color: #ffffff;
     text-align: center;
 }
 
 .titulo-principal {
+    max-width: 900px;
     font-size: 48px;
     font-weight: 800;
 }
 
 .texto-principal {
+    max-width: 750px;
     font-size: 18px;
     font-weight: 400;
 }
 
 
-/* Secciones de contenido */
+/* Secciones generales */
+
+.seccion,
+.seccion-contacto,
+.seccion-noticias,
+.seccion-ultimas-noticias,
+.seccion-fixture,
+.seccion-resultados,
+.seccion-proximos,
+.seccion-clasificados,
+.seccion-cruces,
+.seccion-fases,
+.seccion-fuente {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 40px;
+}
 
 .seccion-contacto {
     background-color: #e4ebe7;
@@ -99,6 +143,9 @@
 }
 
 .lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     line-height: 1.8;
     list-style: none;
 }
@@ -108,9 +155,12 @@
 }
 
 
-/* Información de la página Sobre mí */
+/* Información de Sobre mí */
 
 .lista-informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     list-style: none;
 }
 
@@ -119,6 +169,33 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
+}
+
+
+/* Imagen de la página Resultados */
+
+.figura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.imagen {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+.descripcion-imagen {
+    color: #4b554f;
+    font-size: 14px;
+    text-align: center;
 }
 
 
@@ -132,12 +209,46 @@
     color: #ffffff;
 }
 
+.noticias-destacadas {
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .noticia-principal {
+    display: flex;
+    flex: 2 1 0;
+    min-width: 0;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
     background-color: #123524;
     color: #ffffff;
 }
 
+.imagen-noticia-principal {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.contenido-noticia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .noticia-secundaria {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
     background-color: #123524;
     color: #ffffff;
 }
@@ -153,12 +264,14 @@
     color: #ffffff;
     font-size: 30px;
     font-weight: 800;
+    overflow-wrap: break-word;
 }
 
 .titulo-noticia {
     color: #123524;
     font-size: 22px;
     font-weight: 800;
+    overflow-wrap: break-word;
 }
 
 .noticia-secundaria .titulo-noticia {
@@ -169,6 +282,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
+    overflow-wrap: break-word;
 }
 
 
@@ -178,7 +292,22 @@
     background-color: #f2f5f3;
 }
 
+.lista-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .tarjeta-noticia {
+    display: flex;
+    flex: 1 1 250px;
+    min-width: 0;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
     background-color: #ffffff;
 }
 
@@ -196,7 +325,23 @@
     text-align: center;
 }
 
+.contenedor-fixture {
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .tarjeta-fixture {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -208,19 +353,16 @@
     text-align: center;
 }
 
+.imagen-fixture {
+    width: 100%;
+    height: auto;
+}
+
 .descripcion-fixture {
     color: #4b554f;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-}
-
-
-/* Imágenes de las páginas */
-
-.descripcion-imagen {
-    color: #4b554f;
-    font-size: 14px;
 }
 
 
@@ -235,6 +377,15 @@
 }
 
 .grupo-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -268,6 +419,10 @@
     color: #ffffff;
 }
 
+.seccion-proximos .grupo-resultados {
+    background-color: #0b2117;
+}
+
 .partido-proximo {
     color: #ffffff;
     font-size: 18px;
@@ -283,6 +438,7 @@
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.6;
 }
 
 
@@ -294,10 +450,21 @@
 }
 
 .lista-clasificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     list-style: none;
 }
 
 .equipo-clasificado {
+    flex: 1 1 200px;
+    min-width: 0;
+    padding: 20px;
+    background-color: #ffffff;
     color: #123524;
     font-size: 18px;
     font-weight: 800;
@@ -313,11 +480,16 @@
 /* Cruces de octavos de final */
 
 .seccion-cruces {
+    align-items: center;
     background-color: #e4ebe7;
     text-align: center;
 }
 
 .cruce {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
     color: #202820;
     font-size: 18px;
     font-weight: 600;
@@ -331,6 +503,17 @@
     text-align: center;
 }
 
+.fase {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
 .fase-pendiente {
     color: #4b554f;
     font-size: 16px;
@@ -341,6 +524,7 @@
 /* Fuente de información */
 
 .seccion-fuente {
+    align-items: center;
     background-color: #202820;
     color: #ffffff;
     text-align: center;
@@ -365,6 +549,11 @@
 /* Pie de página */
 
 .pie-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 40px;
     background-color: #0b2117;
     color: #ffffff;
 }
@@ -374,15 +563,76 @@
 }
 
 .lista-redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     list-style: none;
 }
 
 .enlace-red {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     color: #ff8a1f;
     font-weight: 600;
     text-decoration: none;
 }
 
-.enlace-red .icono-red {
-    vertical-align: middle;
+
+/* Adaptación para pantallas pequeñas */
+
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .titulo-principal {
+        font-size: 34px;
+    }
+
+    .titulo-seccion {
+        font-size: 27px;
+    }
+
+    .seccion,
+    .seccion-inicio,
+    .seccion-contacto,
+    .seccion-noticias,
+    .seccion-ultimas-noticias,
+    .seccion-fixture,
+    .seccion-resultados,
+    .seccion-proximos,
+    .seccion-clasificados,
+    .seccion-cruces,
+    .seccion-fases,
+    .seccion-fuente {
+        padding: 35px 20px;
+    }
+
+    .noticias-destacadas,
+    .contenedor-fixture {
+        flex-direction: column;
+    }
+
+    .imagen-noticia-principal {
+        height: auto;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .lista-redes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
