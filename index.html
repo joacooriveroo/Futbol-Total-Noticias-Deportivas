@@ -3,44 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Hoja de estilos externa -->
     <link rel="stylesheet" href="./styles/styles.css">
-
     <title>Fútbol Total | Noticias Deportivas</title>
 </head>
 
-<body class="pagina" id="inicio">
-
+<body class="pagina pagina-inicio" id="inicio">
     <header class="encabezado encabezado-inicio">
-        <a
-            class="enlace-logo"
-            href="#inicio"
-            aria-label="Volver al principio de la página"
-        >
+        <a class="enlace-logo" href="#inicio" aria-label="Volver al inicio">
             <img
                 class="logo-pagina"
-                src="./assets/logo-futbol.png"
+                src="./assets/logo-futbol-total.png"
                 alt="Logo de Fútbol Total"
-                width="90"
-                height="90"
             >
         </a>
 
-        <nav class="navegacion">
+        <nav class="navegacion" aria-label="Navegación principal">
             <ul class="menu">
                 <li class="menu-item">
                     <a class="menu-enlace" href="./pages/sobre-mi.html">Sobre mí</a>
                 </li>
-
                 <li class="menu-item">
                     <a class="menu-enlace" href="./pages/proyectos.html">Proyectos</a>
                 </li>
-
                 <li class="menu-item">
                     <a class="menu-enlace" href="./pages/resultados.html">Resultados</a>
                 </li>
-
                 <li class="menu-item">
                     <a class="menu-enlace" href="./pages/contacto.html">Contacto</a>
                 </li>
@@ -49,175 +36,113 @@
     </header>
 
     <main class="contenido">
+        <section class="portada-noticias" aria-labelledby="titulo-portada">
+            <div class="contenedor-portal">
+                <h1 class="titulo-portal" id="titulo-portada">Noticias destacadas</h1>
 
-        <!-- Presentación principal -->
-
-        <section class="seccion-inicio">
-            <h1 class="titulo-principal">
-                Pasión por el Fútbol y la Actualidad Deportiva
-            </h1>
-
-            <p class="texto-principal">
-                Noticias, resultados, fichajes y análisis de las ligas más importantes del mundo.
-            </p>
-        </section>
-
-        <!-- Noticias principales -->
-
-        <section class="seccion-noticias">
-            <h2 class="titulo-seccion">Noticias destacadas</h2>
-
-            <div class="noticias-destacadas">
-
-                <article class="noticia-principal">
-                    <img
-                        class="imagen-noticia-principal"
-                        src="./assets/estadio-sudamericana.jpeg"
-                        alt="Vista panorámica del estadio Metropolitano Roberto Meléndez de Barranquilla listo para una final de Copa Sudamericana"
+                <div class="grilla-destacadas">
+                    <a
+                        class="noticia-imagen noticia-imagen-grande noticia-bava"
+                        href="./pages/noticias/jorge-bava.html"
                     >
+                        <img
+                            src="./assets/jorge-bava.jpg"
+                            alt="Jorge Bava durante un partido"
+                        >
+                        <div class="capa-noticia">
+                            <p class="categoria-portada">Ciclo cumplido</p>
+                            <h2>Nacional cesó a Jorge Bava de su cargo como entrenador</h2>
+                            <p>El club comunicó la decisión después de los últimos resultados deportivos.</p>
+                        </div>
+                    </a>
 
-                    <div class="contenido-noticia">
-                        <p class="categoria-noticia">
-                            Copa Sudamericana
-                        </p>
+                    <a
+                        class="noticia-imagen noticia-imagen-grande noticia-penarol"
+                        href="./pages/noticias/penarol-central.html"
+                    >
+                        <img
+                            src="./assets/leonel-jaime.png"
+                            alt="Leonel Jaime celebrando un gol con Peñarol"
+                        >
+                        <div class="capa-noticia">
+                            <p class="categoria-portada">De estreno</p>
+                            <h2>Clausura: Peñarol, con una baja demasiado sensible, recibe a Central. Hora, formaciones y dónde verlo</h2>
+                            <p>El equipo aurinegro afronta un nuevo partido por el Torneo Clausura.</p>
+                        </div>
+                    </a>
+                </div>
 
-                        <h3 class="titulo-noticia-principal">
-                            El Estadio Metropolitano Roberto Meléndez de Barranquilla, Colombia se prepara para una jornada histórica
-                        </h3>
+                <div class="grilla-secundarias">
+                    <a
+                        class="tarjeta-secundaria-portada noticia-araujo"
+                        href="./pages/noticias/ronald-araujo.html"
+                    >
+                        <div class="marco-secundaria">
+                            <img
+                                src="./assets/Ronald-Araujo.jpeg"
+                                alt="Ronald Araújo durante su presentación"
+                            >
+                        </div>
+                        <div class="texto-secundaria">
+                            <p class="categoria-portada">Mercado de fichajes</p>
+                            <h2>Ronald Araújo vuelve a ser protagonista en el mercado</h2>
+                            <p>El defensor uruguayo aparece en el centro de las novedades del fútbol internacional.</p>
+                        </div>
+                    </a>
 
-                        <p class="resumen-noticia">
-                            Miles de hinchas esperan una jornada inolvidable en uno de los estadios más importantes del continente.
-                        </p>
-                    </div>
-                </article>
+                    <a
+                        class="tarjeta-secundaria-portada noticia-merentiel"
+                        href="./pages/noticias/miguel-merentiel.html"
+                    >
+                        <div class="marco-secundaria">
+                            <img
+                                src="./assets/merentiel-png.png"
+                                alt="Miguel Merentiel celebrando su gol con Boca ante Platense"
+                            >
+                        </div>
+                        <div class="texto-secundaria">
+                            <p class="categoria-portada">Volvió a mojar</p>
+                            <h2>Merentiel volvió a marcar y le dio el empate a Boca ante Platense, para el que Nicolás López no tuvo minutos</h2>
+                            <p>El delantero uruguayo convirtió para rescatar un punto en el encuentro.</p>
+                        </div>
+                    </a>
 
-                <article class="noticia-secundaria">
-                    <p class="categoria-noticia">
-                        Mercado de fichajes
-                    </p>
+                    <a
+                        class="tarjeta-secundaria-portada noticia-juanico"
+                        href="./pages/noticias/juanico-ofi-b.html"
+                    >
+                        <div class="marco-secundaria">
+                            <img
+                                src="./assets/juanico-divisional-b.png"
+                                alt="Incidentes entre futbolistas durante la semifinal de OFI"
+                            >
+                        </div>
+                        <div class="texto-secundaria">
+                            <p class="categoria-portada">Escándalo en OFI</p>
+                            <h2>Semifinal de OFI terminó en batalla campal: golpes de puño y patadas</h2>
+                            <p>El encuentro terminó con graves incidentes y enfrentamientos entre los jugadores.</p>
+                        </div>
+                    </a>
 
-                    <h3 class="titulo-noticia">
-                        Los clubes preparan nuevas incorporaciones
-                    </h3>
-
-                    <p class="resumen-noticia">
-                        Los equipos buscan reforzar sus planteles antes del comienzo de la próxima temporada.
-                    </p>
-                </article>
-
+                    <a
+                        class="tarjeta-secundaria-portada noticia-jadson"
+                        href="./pages/noticias/jadson-viera.html"
+                    >
+                        <div class="marco-secundaria">
+                            <img
+                                src="./assets/jadson-viera.png"
+                                alt="Jadson Viera, nuevo entrenador de Independiente"
+                            >
+                        </div>
+                        <div class="texto-secundaria">
+                            <p class="categoria-portada">Se viste de rojo</p>
+                            <h2>Jadson Viera es el nuevo entrenador de Independiente: de campeón con Nacional a Avellaneda</h2>
+                            <p>El entrenador uruguayo continuará su carrera en el fútbol argentino.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
-
-        <!-- Últimas noticias -->
-
-        <section class="seccion-ultimas-noticias">
-            <h2 class="titulo-seccion">Últimas noticias</h2>
-
-            <div class="lista-noticias">
-
-                <article class="tarjeta-noticia">
-                    <p class="categoria-noticia">
-                        Fútbol uruguayo
-                    </p>
-
-                    <h3 class="titulo-noticia">
-                        Se confirmó una nueva fecha del Campeonato Intermedio
-                    </h3>
-
-                    <p class="resumen-noticia">
-                        Los equipos ya conocen los días y horarios de sus próximos partidos.
-                    </p>
-                </article>
-
-                <article class="tarjeta-noticia">
-                    <p class="categoria-noticia">
-                        Internacional
-                    </p>
-
-                    <h3 class="titulo-noticia">
-                        Las principales ligas entran en su etapa decisiva
-                    </h3>
-
-                    <p class="resumen-noticia">
-                        Los clubes luchan por el campeonato y la clasificación a los torneos internacionales.
-                    </p>
-                </article>
-
-                <article class="tarjeta-noticia">
-                    <p class="categoria-noticia">
-                        Selección
-                    </p>
-
-                    <h3 class="titulo-noticia">
-                        La selección prepara sus próximos encuentros amistosos FIFA
-                    </h3>
-
-                    <p class="resumen-noticia">
-                        El cuerpo técnico analiza la lista de jugadores que participarán en los próximos partidos.
-                    </p>
-                </article>
-
-                <article class="tarjeta-noticia">
-                    <p class="categoria-noticia">
-                        Resultados
-                    </p>
-
-                    <h3 class="titulo-noticia">
-                        Repasá los resultados de la última jornada
-                    </h3>
-
-                    <p class="resumen-noticia">
-                        Toda la información sobre los partidos disputados y las posiciones del campeonato.
-                    </p>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- Fixture del Torneo Intermedio -->
-
-        <section class="seccion-fixture">
-            <h2 class="titulo-seccion">
-                Fecha 7 del Torneo Intermedio 2026
-            </h2>
-
-            <p class="texto-fixture">
-                Fixture de la última fecha de las series A y B.
-            </p>
-
-            <div class="contenedor-fixture">
-
-                <figure class="tarjeta-fixture">
-                    <h3 class="subtitulo-fixture">Serie A</h3>
-
-                    <img
-                        class="imagen-fixture"
-                        src="./assets/serie-a.jpg"
-                        alt="Fixture de la fecha 7 de la Serie A del Torneo Intermedio 2026"
-                    >
-
-                    <figcaption class="descripcion-fixture">
-                        Partidos correspondientes a la fecha 7 del torneo intermedio Grupo A
-                    </figcaption>
-                </figure>
-
-                <figure class="tarjeta-fixture">
-                    <h3 class="subtitulo-fixture">Serie B</h3>
-
-                    <img
-                        class="imagen-fixture"
-                        src="./assets/serie-b.jpg"
-                        alt="Fixture de la fecha 7 de la Serie B del Torneo Intermedio 2026"
-                    >
-
-                    <figcaption class="descripcion-fixture">
-                        Partidos correspondientes a la fecha 7 del torneo intermedio Grupo B
-                    </figcaption>
-                </figure>
-
-            </div>
-        </section>
-
     </main>
 
     <footer class="pie-pagina">
@@ -225,58 +150,23 @@
             &copy; <span id="year"></span> Fútbol Total. Todos los derechos reservados.
         </p>
 
-        <nav class="navegacion-redes">
+        <nav class="navegacion-redes" aria-label="Redes sociales">
             <ul class="lista-redes">
                 <li class="red-social">
-                    <a
-                        class="enlace-red"
-                        href="https://twitter.com"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            class="icono-red"
-                            src="./assets/logos/x.png"
-                            alt="Logo de X"
-                            width="14"
-                            height="14"
-                        >
+                    <a class="enlace-red" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="./assets/logos/x.png" alt="" width="14" height="14">
                         Twitter / X
                     </a>
                 </li>
-
                 <li class="red-social">
-                    <a
-                        class="enlace-red"
-                        href="https://instagram.com"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            class="icono-red"
-                            src="./assets/logos/instagram.png"
-                            alt="Logo de Instagram"
-                            width="14"
-                            height="14"
-                        >
+                    <a class="enlace-red" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="./assets/logos/instagram.png" alt="" width="14" height="14">
                         Instagram
                     </a>
                 </li>
-
                 <li class="red-social">
-                    <a
-                        class="enlace-red"
-                        href="https://youtube.com"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            class="icono-red"
-                            src="./assets/logos/yt.png"
-                            alt="Logo de YouTube"
-                            width="14"
-                            height="14"
-                        >
+                    <a class="enlace-red" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="./assets/logos/yt.png" alt="" width="14" height="14">
                         YouTube
                     </a>
                 </li>
@@ -285,9 +175,7 @@
     </footer>
 
     <script>
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-
 </body>
 </html>

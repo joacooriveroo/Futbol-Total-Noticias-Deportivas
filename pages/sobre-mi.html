@@ -3,43 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="../styles/styles.css">
-
     <title>Fútbol Total | Sobre mí</title>
 </head>
 
-<body class="pagina">
-
+<body class="pagina pagina-sobre-mi">
     <header class="encabezado">
-        <a
-            class="enlace-logo"
-            href="../index.html"
-            aria-label="Ir al inicio de Fútbol Total"
-        >
+        <a class="enlace-logo" href="../index.html" aria-label="Ir al inicio de Fútbol Total">
             <img
                 class="logo-pagina"
-                src="../assets/logo-futbol.png"
+                src="../assets/logo-futbol-total.png"
                 alt="Logo de Fútbol Total"
-                width="90"
-                height="90"
             >
         </a>
 
-        <nav class="navegacion">
+        <nav class="navegacion" aria-label="Navegación principal">
             <ul class="menu">
                 <li class="menu-item">
-                    <a class="menu-enlace" href="./sobre-mi.html">Sobre mí</a>
+                    <a class="menu-enlace" href="./sobre-mi.html" aria-current="page">Sobre mí</a>
                 </li>
-
                 <li class="menu-item">
                     <a class="menu-enlace" href="./proyectos.html">Proyectos</a>
                 </li>
-
                 <li class="menu-item">
                     <a class="menu-enlace" href="./resultados.html">Resultados</a>
                 </li>
-
                 <li class="menu-item">
                     <a class="menu-enlace" href="./contacto.html">Contacto</a>
                 </li>
@@ -48,19 +36,17 @@
     </header>
 
     <main class="contenido">
-        <section class="seccion">
-            <h1 class="titulo-principal">Sobre mí</h1>
+        <section class="seccion" aria-labelledby="titulo-sobre-mi">
+            <h1 class="titulo-principal" id="titulo-sobre-mi">Sobre mí</h1>
 
             <article class="articulo">
                 <h2 class="titulo-seccion">Trayectoria y pasión</h2>
-
                 <p class="texto">
                     Hola, soy un periodista deportivo apasionado por el fútbol
                     y por contar las historias que ocurren dentro y fuera de
                     la cancha. Este espacio nace con el objetivo de informar
                     y compartir la emoción de este deporte.
                 </p>
-
                 <p class="texto">
                     En Fútbol Total encontrarás noticias, resultados,
                     calendarios, estadísticas y análisis de los principales
@@ -71,7 +57,6 @@
 
             <article class="articulo">
                 <h2 class="titulo-seccion">Mi objetivo</h2>
-
                 <p class="texto">
                     Mi objetivo es presentar información deportiva clara,
                     confiable y fácil de comprender. Cada publicación busca
@@ -81,30 +66,13 @@
             </article>
 
             <article class="articulo">
-                <h2 class="titulo-seccion">
-                    ¿Qué encontrarás en la página?
-                </h2>
-
+                <h2 class="titulo-seccion">¿Qué encontrarás en la página?</h2>
                 <ul class="lista-informacion">
-                    <li class="informacion-item">
-                        Resultados y calendarios de los partidos.
-                    </li>
-
-                    <li class="informacion-item">
-                        Noticias sobre equipos y jugadores.
-                    </li>
-
-                    <li class="informacion-item">
-                        Estadísticas y datos destacados.
-                    </li>
-
-                    <li class="informacion-item">
-                        Cobertura especial del fútbol uruguayo.
-                    </li>
-
-                    <li class="informacion-item">
-                        Análisis de partidos y competiciones.
-                    </li>
+                    <li class="informacion-item">Resultados y calendarios de los partidos.</li>
+                    <li class="informacion-item">Noticias sobre equipos y jugadores.</li>
+                    <li class="informacion-item">Estadísticas y datos destacados.</li>
+                    <li class="informacion-item">Cobertura especial del fútbol uruguayo.</li>
+                    <li class="informacion-item">Análisis de partidos y competiciones.</li>
                 </ul>
             </article>
 
@@ -114,7 +82,6 @@
                     src="../assets/periodista.jpg"
                     alt="Periodista deportivo cubriendo un evento internacional en el estadio Monumental"
                 >
-
                 <figcaption class="descripcion-imagen">
                     Espacios de trabajo dedicados al periodismo deportivo.
                 </figcaption>
@@ -127,58 +94,23 @@
             &copy; <span id="year"></span> Fútbol Total. Todos los derechos reservados.
         </p>
 
-        <nav class="navegacion-redes">
+        <nav class="navegacion-redes" aria-label="Redes sociales">
             <ul class="lista-redes">
                 <li class="red-social">
-                    <a
-                        class="enlace-red"
-                        href="https://twitter.com"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            class="icono-red"
-                            src="../assets/logos/x.png"
-                            alt="Logo de X"
-                            width="14"
-                            height="14"
-                        >
+                    <a class="enlace-red" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="../assets/logos/x.png" alt="" width="14" height="14">
                         Twitter / X
                     </a>
                 </li>
-
                 <li class="red-social">
-                    <a
-                        class="enlace-red"
-                        href="https://instagram.com"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            class="icono-red"
-                            src="../assets/logos/instagram.png"
-                            alt="Logo de Instagram"
-                            width="14"
-                            height="14"
-                        >
+                    <a class="enlace-red" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="../assets/logos/instagram.png" alt="" width="14" height="14">
                         Instagram
                     </a>
                 </li>
-
                 <li class="red-social">
-                    <a
-                        class="enlace-red"
-                        href="https://youtube.com"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            class="icono-red"
-                            src="../assets/logos/yt.png"
-                            alt="Logo de YouTube"
-                            width="14"
-                            height="14"
-                        >
+                    <a class="enlace-red" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img class="icono-red" src="../assets/logos/yt.png" alt="" width="14" height="14">
                         YouTube
                     </a>
                 </li>
@@ -187,9 +119,7 @@
     </footer>
 
     <script>
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-
 </body>
 </html>
